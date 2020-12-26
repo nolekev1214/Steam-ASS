@@ -12,9 +12,9 @@ const test2 = {
 };
 const kevin = {
     steamID: "76561198045936277",
-    username: "RNvK",
-    gameID: "PAYDAY2",
-    achievementName: "F in Chemistry",
+    username: "Pulkit",
+    gameID: "413150",
+    achievementName: "Local Legend",
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/04/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg",
 };
 const pulkit = {
@@ -23,6 +23,13 @@ const pulkit = {
     gameID: "Sanctum2",
     achievementName: "Growing Stronger",
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/90/904077ede20da3e813726acbebb50d60049ba360_medium.jpg",
+};
+const aj = {
+    steamID: "76561198253719597",
+    username: "AJ",
+    gameID: "244850",
+    achievementName: "Millionaire Club",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
 };
 
 let server = http.createServer(function (req, res) {   //create web server
@@ -35,7 +42,7 @@ let server = http.createServer(function (req, res) {   //create web server
         { //Block to hide boilerplate bullshit
         res.write(`<html lang="en">
 <head>
-	<title>Table V01</title>
+	<title>Steam A.S.S.</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -75,7 +82,8 @@ let server = http.createServer(function (req, res) {   //create web server
         let tableEntry = extractAchievementInfo(kevin);
         let tableEntry2 = extractAchievementInfo(test2);
         let tableEntry3 = extractAchievementInfo(pulkit);
-        Promise.all([tableEntry, tableEntry2, tableEntry3])
+        let tableEntry4 = extractAchievementInfo(aj)
+        Promise.all([tableEntry, tableEntry2, tableEntry3, tableEntry4])
             .then((entries) => {
                 entries.forEach((entry) => {
                     if(entry.complete == 1){
