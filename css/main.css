@@ -164,6 +164,7 @@ table td.r, table th.r {
   font-family: OpenSans-Regular;
   font-size: 18px;
   color: #fff;
+  background-color: #080C11;
   line-height: 1.2;
   font-weight: unset;
 }
@@ -171,14 +172,15 @@ table td.r, table th.r {
 tbody tr {
   font-family: OpenSans-Regular;
   font-size: 15px;
-  color: #808080;
+  color: #ffffff;
+  background-color: #2F343F;
   line-height: 1.2;
   font-weight: unset;
 }
 
 tbody tr:hover {
-  color: #555555;
-  background-color: #9b59b6;
+  color: #ffffff;
+  background-color: #111923;
   cursor: pointer;
 }
 
@@ -200,7 +202,7 @@ tbody tr:hover {
 }
 
 .complete {
-    background: #27ae60;
+    background: #1C7D45;
     color: #ffffff;
 }
 
