@@ -206,3 +206,20 @@ tbody tr:hover {
     color: #ffffff;
     padding-right: 20px
 }
+
+@media screen and (max-width: 992px) {
+
+.table100-head th:nth-child(1){
+  text-align: center;
+}
+.table100-head th:nth-child(2){
+  font-size: 0px;
+}
+.table100-head th:nth-child(3){
+  text-align: left;
+}
+table tbody tr td:nth-child(2){
+    display: none
+}
+
+}
