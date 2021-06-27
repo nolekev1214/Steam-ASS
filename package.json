@@ -4,10 +4,10 @@
   "description": "Steam achievement test bullshit",
   "main": "server.js",
   "dependencies": {
-    "xml-js": "^1.6.11",
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "nunjucks": "^3.2.3",
+    "xml-js": "^1.6.11"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
