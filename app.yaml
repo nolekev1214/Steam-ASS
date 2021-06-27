@@ -1,1 +1,18 @@
 runtime: nodejs14
+
+handlers:
+- url: /css
+  static_dir: css
+  
+- url: /vendor
+  static_dir: vendor
+  
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+  
+- url: /fonts/OpenSans
+  static_dir: fonts/OpenSans
+  
+- url: /images
+  static_dir: images
