@@ -7,23 +7,16 @@ let nunjucks = require('nunjucks');
 const kevin = {
     steamID: "76561198045936277",
     username: "Kevin",
-    gameID: "378860",
-    achievementName: "Manual All The Way",
+    gameID: "1113000",
+    achievementName: "The Reaper Becomes the Reaped",
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/04/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg",
 };
-const kevin2 = {
-    steamID: "76561198045936277",
-    username: "Kevin",
-    gameID: "378860",
-    achievementName: "No Man's Fly",
-    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/04/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg",
-};
-const pulkit = {
-    steamID: "76561198245431724",
-    username: "Pulkit",
-    gameID: "413150",
-    achievementName: "Local Legend",
-    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/90/904077ede20da3e813726acbebb50d60049ba360_medium.jpg",
+const jordan = {
+    steamID: "76561198066431554",
+    username: "Jordan",
+    gameID: "Borderlands2",
+    achievementName: "Went Five Rounds",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/d4/d4f1d93caa986f5f18c5ccf4f26e9b028c6b4365_medium.jpg",
 };
 const aj = {
     steamID: "76561198253719597",
@@ -40,10 +33,8 @@ let server = http.createServer(function (req, res) {   //create web server
         res.writeHead(200, { 'Content-Type': 'text/html' }); 
         
         let tableEntry = extractAchievementInfo(kevin);
-        let tableEntry2 = extractAchievementInfo(pulkit);
-        let tableEntry3 = extractAchievementInfo(aj)
-        let tableEntry4 = extractAchievementInfo(kevin2);
-        Promise.all([tableEntry2, tableEntry3, tableEntry, tableEntry4])
+        let tableEntry2 = extractAchievementInfo(jordan);
+        Promise.all([tableEntry2, tableEntry])
             .then((entries) => {
                 let out = nunjucks.render('templates/main.njk', {gamers: entries});
                 res.write(out);
@@ -63,6 +54,7 @@ async function extractAchievementInfo(input){
     let response = await axios.get(`https://steamcommunity.com/profiles/${input.steamID}/stats/${input.gameID}/?xml=1`);
     if(response.status === 200){
         const xml = response.data;
+        //console.log(xml);
         let steamProfile = convert.xml2js(xml);
         //console.log(JSON.stringify(steamProfile));
         //console.log(`https://steamcommunity.com/id/${input.steamID}/stats/${input.gameID}/?xml=1`);
