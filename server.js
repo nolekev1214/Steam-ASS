@@ -25,6 +25,13 @@ const aj = {
     achievementName: "Veggiesaurus",
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
 };
+const anthony = {
+    steamID: "76561198070694263",
+    username: "Anthony",
+    gameID: "1145360",
+    achievementName: "Death Dealer",
+    avatar: "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/d9/d9cfb6e5abe2e5aab37e5e33bc04edb4ceee1b18_medium.jpg",
+};
 
 let server = http.createServer(function (req, res) {   //create web server
     if (req.url == '/') { //check the URL of the current request
@@ -34,7 +41,8 @@ let server = http.createServer(function (req, res) {   //create web server
         
         let tableEntry = extractAchievementInfo(kevin);
         let tableEntry2 = extractAchievementInfo(jordan);
-        Promise.all([tableEntry2, tableEntry])
+        let tableEntry3 = extractAchievementInfo(anthony);
+        Promise.all([tableEntry2, tableEntry, tableEntry3])
             .then((entries) => {
                 let out = nunjucks.render('templates/main.njk', {gamers: entries});
                 res.write(out);
@@ -57,7 +65,7 @@ async function extractAchievementInfo(input){
         //console.log(xml);
         let steamProfile = convert.xml2js(xml);
         //console.log(JSON.stringify(steamProfile));
-        //console.log(`https://steamcommunity.com/id/${input.steamID}/stats/${input.gameID}/?xml=1`);
+        console.log(`https://steamcommunity.com/id/${input.steamID}/stats/${input.gameID}/?xml=1`);
         let achievements = steamProfile.elements[0].elements[5].elements;
         //console.log(achievements);
         
