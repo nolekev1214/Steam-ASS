@@ -21,8 +21,8 @@ const jordan = {
 const aj = {
     steamID: "76561198253719597",
     username: "AJ",
-    gameID: "648350",
-    achievementName: "Veggiesaurus",
+    gameID: "433340",
+    achievementName: "Carousel",
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
 };
 const anthony = {
@@ -42,7 +42,8 @@ let server = http.createServer(function (req, res) {   //create web server
         let tableEntry = extractAchievementInfo(kevin);
         let tableEntry2 = extractAchievementInfo(jordan);
         let tableEntry3 = extractAchievementInfo(anthony);
-        Promise.all([tableEntry2, tableEntry, tableEntry3])
+        let tableEntry4 = extractAchievementInfo(aj);
+        Promise.all([tableEntry2, tableEntry, tableEntry3, tableEntry4])
             .then((entries) => {
                 let out = nunjucks.render('templates/main.njk', {gamers: entries});
                 res.write(out);
