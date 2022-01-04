@@ -7,8 +7,8 @@ let nunjucks = require('nunjucks');
 const kevin = {
     steamID: "76561198045936277",
     username: "Kevin",
-    gameID: "1113000",
-    achievementName: "The Reaper Becomes the Reaped",
+    gameID: "646570",
+    achievementName: "The End?",
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/04/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg",
 };
 const jordan = {
