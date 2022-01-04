@@ -58,11 +58,13 @@ let server = http.createServer(function (req, res) {   //create web server
         // set response header
         res.writeHead(200, { 'Content-Type': 'text/html' }); 
         
-        let tableEntry = extractAchievementInfo(kevin);
-        let tableEntry2 = extractAchievementInfo(jordan);
-        let tableEntry3 = extractAchievementInfo(anthony);
-        let tableEntry4 = extractAchievementInfo(aj);
-        Promise.all([tableEntry2, tableEntry, tableEntry3, tableEntry4])
+        let tableEntry = extractAchievementInfo(louis);
+        let tableEntry2 = extractAchievementInfo(curtis);
+        let tableEntry3 = extractAchievementInfo(george);
+        let tableEntry4 = extractAchievementInfo(justin);
+        let tableEntry5 = extractAchievementInfo(robbie);
+        let tableEntry6 = extractAchievementInfo(kevin);
+        Promise.all([tableEntry2, tableEntry, tableEntry3, tableEntry4, tableEntry5, tableEntry6])
             .then((entries) => {
                 let out = nunjucks.render('templates/main.njk', {gamers: entries});
                 res.write(out);
