@@ -87,7 +87,7 @@ async function extractAchievementInfo(input){
         //console.log(xml);
         let steamProfile = convert.xml2js(xml);
         //console.log(JSON.stringify(steamProfile));
-        console.log(`https://steamcommunity.com/id/${input.steamID}/stats/${input.gameID}/?xml=1`);
+        //console.log(`https://steamcommunity.com/id/${input.steamID}/stats/${input.gameID}/?xml=1`);
         let achievements = steamProfile.elements[0].elements[5].elements;
         //console.log(achievements);
         
