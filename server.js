@@ -4,33 +4,52 @@ let http = require('http'); // Import Node.js core module
 let fs = require('fs');
 let nunjucks = require('nunjucks');
 
+const louis = {
+    steamID: "76561197995437185",
+    username: "Louis",
+    gameID: "457140",
+    achievementName: "No Place Like Clone",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/98/98ca74f0dcbf9be38796f1fcd207f97e1be7dd71_medium.jpg",
+};
+
+const curtis = {
+    steamID: "76561198090735778",
+    username: "Curtis",
+    gameID: "1145360",
+    achievementName: "Harsh Conditions",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/c8/c8ae3cae045e634fc93586d26de4712e31d0b5fe_medium.jpg",
+};
+
+const george = {
+    steamID: "76561198025187867",
+    username: "George",
+    gameID: "361420",
+    achievementName: "Where We\'re Going, We Don\'t Need Roads",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/a6/a676a4f8afa8d75bd1d02a3d30ebe81d4e1b8de2_medium.jpg",
+};
+
+const justin = {
+    steamID: "76561199092931293",
+    username: "Justin",
+    gameID: "397540",
+    achievementName: "Got Big Game",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/e5/e533397dda7c375f14da359788b777261df3fae6_medium.jpg",
+};
+
+const robbie = {
+    steamID: "76561198039901632",
+    username: "Robbie",
+    gameID: "1286350",
+    achievementName: "Njord - Ruler of the Sea",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/c2/c266a30489d164a98c3fd5eaea16d84be7d85dd9_medium.jpg",
+};
+
 const kevin = {
     steamID: "76561198045936277",
     username: "Kevin",
     gameID: "646570",
     achievementName: "The End?",
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/04/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg",
-};
-const jordan = {
-    steamID: "76561198066431554",
-    username: "Jordan",
-    gameID: "Borderlands2",
-    achievementName: "Went Five Rounds",
-    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/d4/d4f1d93caa986f5f18c5ccf4f26e9b028c6b4365_medium.jpg",
-};
-const aj = {
-    steamID: "76561198253719597",
-    username: "AJ",
-    gameID: "433340",
-    achievementName: "Carousel",
-    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
-};
-const anthony = {
-    steamID: "76561198070694263",
-    username: "Anthony",
-    gameID: "1145360",
-    achievementName: "Death Dealer",
-    avatar: "https://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/d9/d9cfb6e5abe2e5aab37e5e33bc04edb4ceee1b18_medium.jpg",
 };
 
 let server = http.createServer(function (req, res) {   //create web server
