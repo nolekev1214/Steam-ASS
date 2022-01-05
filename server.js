@@ -90,7 +90,8 @@ let server = http.createServer(function (req, res) {   //create web server
         let tableEntry6 = extractAchievementInfo(kevin);
         let tableEntry7 = extractAchievementInfo(josh);
         let tableEntry8 = extractAchievementInfo(cole);
-        Promise.all([tableEntry, tableEntry2, tableEntry3, tableEntry4, tableEntry5, tableEntry6, tableEntry7, tableEntry8])
+        let tableEntry9 = extractAchievementInfo(steven);
+        Promise.all([tableEntry, tableEntry2, tableEntry3, tableEntry4, tableEntry5, tableEntry6, tableEntry7, tableEntry8, tableEntry9])
             .then((entries) => {
                 let out = nunjucks.render('templates/main.njk', {gamers: entries});
                 res.write(out);
