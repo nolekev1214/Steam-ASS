@@ -78,18 +78,12 @@ let server = http.createServer(function (req, res) {   //create web server
 
 server.listen(8080); //6 - listen for any incoming requests
 
-console.log('Node.js web server at port 8080 is running..')
-
 async function extractAchievementInfo(input){
     let response = await axios.get(`https://steamcommunity.com/profiles/${input.steamID}/stats/${input.gameID}/?xml=1`);
     if(response.status === 200){
         const xml = response.data;
-        //console.log(xml);
         let steamProfile = convert.xml2js(xml);
-        //console.log(JSON.stringify(steamProfile));
-        //console.log(`https://steamcommunity.com/id/${input.steamID}/stats/${input.gameID}/?xml=1`);
         let achievements = steamProfile.elements[0].elements[5].elements;
-        //console.log(achievements);
         
         let out = {
             complete: 0,
