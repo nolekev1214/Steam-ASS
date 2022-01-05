@@ -68,6 +68,14 @@ const cole = {
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/dd/ddfe5f81ae8e6ec26636946b38f524c56944918e_medium.jpg",
 };
 
+const steven = {
+    steamID: "76561198008480788",
+    username: "Steven",
+    gameID: "1082710",
+    achievementName: "Gamer",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
+};
+
 let server = http.createServer(function (req, res) {   //create web server
     if (req.url == '/') { //check the URL of the current request
         
