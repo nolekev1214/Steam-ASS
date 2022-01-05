@@ -207,6 +207,11 @@ tbody tr:hover {
     padding-right: 20px
 }
 
+.complete:hover{
+    background: #13532E;
+    cursor:pointer;
+}
+
 @media screen and (max-width: 600px) {
 
 .table100-head th:nth-child(1){
