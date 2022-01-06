@@ -76,7 +76,7 @@ const steven = {
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
 };
 
-const Timothy = {
+const timothy = {
     steamID: "76561198432530735",
     username: "Timothy",
     gameID: "683320",
