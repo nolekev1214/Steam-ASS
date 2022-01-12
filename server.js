@@ -92,6 +92,14 @@ const keaton = {
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg",
 };
 
+const chris = {
+    steamID: "76561197993970827",
+    username: "Chris",
+    gameID: "250900",
+    achievementName: "A Fetus in a Jar",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/88/88308ca51bfdc3cbf88ad39ac852d9c54375699f_medium.jpg",
+};
+
 let server = http.createServer(function (req, res) {   //create web server
     if (req.url == '/') { //check the URL of the current request
         
@@ -109,7 +117,8 @@ let server = http.createServer(function (req, res) {   //create web server
         let tableEntry9 = extractAchievementInfo(steven);
         let tableEntry10 = extractAchievementInfo(timothy);
         let tableEntry11 = extractAchievementInfo(keaton);
-        Promise.all([tableEntry, tableEntry2, tableEntry3, tableEntry4, tableEntry5, tableEntry6, tableEntry7, tableEntry8, tableEntry9, tableEntry10, tableEntry11])
+        let tableEntry12 = extractAchievementInfo(chris);
+        Promise.all([tableEntry, tableEntry2, tableEntry3, tableEntry4, tableEntry5, tableEntry6, tableEntry7, tableEntry8, tableEntry9, tableEntry10, tableEntry11, tableEntry12])
             .then((entries) => {
                 let out = nunjucks.render('templates/main.njk', {gamers: entries});
                 res.write(out);
