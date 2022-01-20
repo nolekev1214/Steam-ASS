@@ -31,8 +31,8 @@ const george = {
 const justin = {
     steamID: "76561199092931293",
     username: "Justin",
-    gameID: "397540",
-    achievementName: "Got Big Game",
+    gameID: "PAYDAY2",
+    achievementName: "Shotguns 101",
     avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/e5/e533397dda7c375f14da359788b777261df3fae6_medium.jpg",
 };
 
