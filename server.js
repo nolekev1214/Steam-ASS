@@ -4,6 +4,14 @@ let http = require('http'); // Import Node.js core module
 let fs = require('fs');
 let nunjucks = require('nunjucks');
 
+const meme = {
+    steamID: "76561198045936277",
+    username: "Kevin",
+    gameID: "1293830",
+    achievementName: "Make Louis Proud",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/c2/c266a30489d164a98c3fd5eaea16d84be7d85dd9_medium.jpg",
+};
+
 const louis = {
     steamID: "76561197995437185",
     username: "Louis",
@@ -106,6 +114,7 @@ let server = http.createServer(function (req, res) {   //create web server
         // set response header
         res.writeHead(200, { 'Content-Type': 'text/html' }); 
         
+        let tableEntry0 = extractAchievementInfo(meme);
         let tableEntry = extractAchievementInfo(louis);
         let tableEntry2 = extractAchievementInfo(curtis);
         let tableEntry3 = extractAchievementInfo(george);
@@ -118,7 +127,7 @@ let server = http.createServer(function (req, res) {   //create web server
         let tableEntry10 = extractAchievementInfo(timothy);
         let tableEntry11 = extractAchievementInfo(keaton);
         let tableEntry12 = extractAchievementInfo(chris);
-        Promise.all([tableEntry, tableEntry2, tableEntry3, tableEntry4, tableEntry5, tableEntry6, tableEntry7, tableEntry8, tableEntry9, tableEntry10, tableEntry11, tableEntry12])
+        Promise.all([tableEntry0, tableEntry, tableEntry2, tableEntry3, tableEntry4, tableEntry5, tableEntry6, tableEntry7, tableEntry8, tableEntry9, tableEntry10, tableEntry11, tableEntry12])
             .then((entries) => {
                 let out = nunjucks.render('templates/main.njk', {gamers: entries});
                 res.write(out);
