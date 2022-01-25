@@ -9,7 +9,7 @@ const meme = {
     username: "Kevin",
     gameID: "1293830",
     achievementName: "Make Louis Proud",
-    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/c2/c266a30489d164a98c3fd5eaea16d84be7d85dd9_medium.jpg",
+    avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/04/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg",
 };
 
 const louis = {
