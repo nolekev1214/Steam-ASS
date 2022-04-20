@@ -131,7 +131,7 @@ let server = http.createServer(function (req, res) {   //create web server
 
 });
 
-server.listen(8080); //6 - listen for any incoming requests
+server.listen(process.env.PORT); //6 - listen for any incoming requests
 
 async function extractAchievementInfo(input){
     let response = await axios.get(`https://steamcommunity.com/profiles/${input.steamID}/stats/${input.gameID}/?xml=1`);
