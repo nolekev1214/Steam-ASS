@@ -134,12 +134,7 @@ server.listen(8080); //6 - listen for any incoming requests
 
 async function extractAchievementInfo(input){
     let response = await axios.get(`https://steamcommunity.com/profiles/${input.steamID}/stats/${input.gameID}/?xml=1`);
-    if(response.status === 200){
-        const xml = response.data;
-        let steamProfile = convert.xml2js(xml);
-        let achievements = steamProfile.elements[0].elements[5].elements;
-        
-        let out = {
+    let out = {
             complete: 0,
             iconComplete: "",
             iconIncomplete: "",
@@ -152,6 +147,11 @@ async function extractAchievementInfo(input){
             steamID: "",
             gameID: ""
         }
+    
+    if(response.status === 200){
+        const xml = response.data;
+        let steamProfile = convert.xml2js(xml);
+        let achievements = steamProfile.elements[0].elements[5].elements;
         
         achievements.forEach(achievement => {
             //console.log(achievement.elements[2].elements[0].cdata);
@@ -175,7 +175,9 @@ async function extractAchievementInfo(input){
             out.complete = false;
         if(out.complete == 1)
             out.complete = true;
-        return out;
+    } else {
+        out.description = "Failed to access steam";
     }
+    return out;
 
 }
