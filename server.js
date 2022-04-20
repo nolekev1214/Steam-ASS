@@ -123,7 +123,8 @@ let server = http.createServer(function (req, res) {   //create web server
                 let out = nunjucks.render('templates/main.njk', {gamers: entries});
                 res.write(out);
                 res.end();
-            });
+            })
+            .catch(error => console.log(error.message));
     }
     else
         res.end(`Invalid Request to ${req.url}`);
