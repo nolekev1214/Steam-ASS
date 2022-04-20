@@ -16,3 +16,6 @@ handlers:
   
 - url: /images
   static_dir: images
+  
+env_variables:
+  PORT: 8080
