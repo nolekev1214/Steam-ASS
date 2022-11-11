@@ -26,9 +26,16 @@ let server = http.createServer(function (req, res) {
         res.writeHead(302, { location: "/static/2021.html" });
         res.end();
     }
-    else
-        res.end(`Invalid Request to ${req.url}`);
-
+    else{
+        fs.readFile(__dirname + req.url, function(err, data){
+            if(err){
+                res.writeHead(404);
+                res.end(`Invalid Request to ${req.url}`);
+            }
+            res.writeHead(200);
+            res.end(data);
+        });
+    }
 });
 
 server.listen(process.env.PORT); //Run on Google Cloud
