@@ -23,9 +23,8 @@ let server = http.createServer(function (req, res) {
             .catch(error => console.log(error.message));
     }
     else if(req.url == '/2021'){
-        let fileStream = fs.createReadStream("./static/2021.html");
-        res.writeHead(200, { 'Content-Type': 'text/css' });
-        fileStream.pipe(res)
+        res.writeHead(302, { location: "/static/2021.html" });
+        res.end();
     }
     else
         res.end(`Invalid Request to ${req.url}`);
