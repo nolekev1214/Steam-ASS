@@ -1,14 +1,12 @@
 let convert = require('xml-js');
 let axios = require('axios');
-let http = require('http'); // Import Node.js core module
+let http = require('http');
 let fs = require('fs');
 let nunjucks = require('nunjucks');
 let members = require("./members.json");
 
-let server = http.createServer(function (req, res) {   //create web server
-    if (req.url == '/') { //check the URL of the current request
-        
-        // set response header
+let server = http.createServer(function (req, res) {
+    if (req.url == '/') {
         res.writeHead(200, { 'Content-Type': 'text/html' }); 
         
         let promiseTable = [];
@@ -25,15 +23,9 @@ let server = http.createServer(function (req, res) {   //create web server
             .catch(error => console.log(error.message));
     }
     else if(req.url == '/2021'){
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        fs.readFile("./static/2021.html", 'utf8', (err, data) => {
-            if(err){
-                console.log(err);
-                return;
-            }
-            res.write(data);
-            res.end();
-        });
+        let fileStream = fs.createReadStream("./static/2021.html");
+        res.writeHead(200, { 'Content-Type': 'text/css' });
+        fileStream.pipe(res)
     }
     else
         res.end(`Invalid Request to ${req.url}`);
@@ -91,5 +83,4 @@ async function extractAchievementInfo(input){
         out.description = "Failed to access steam";
     }
     return out;
-
 }
