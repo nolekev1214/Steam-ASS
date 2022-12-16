@@ -38,8 +38,8 @@ let server = http.createServer(function (req, res) {
     }
 });
 
-server.listen(process.env.PORT); //Run on Google Cloud
-//server.listen(8080); //Run Locally
+//server.listen(process.env.PORT); //Run on Google Cloud
+server.listen(8080); //Run Locally
 //console.log('Node.js web server at port 8080 is running..');
 
 async function extractAchievementInfo(input){
