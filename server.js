@@ -68,8 +68,8 @@ async function extractAchievementInfo(input){
             //console.log(achievement.elements[2].elements[0].cdata);
             //console.log(achievement.elements[2].elements[0].cdata == input.achievementName);
             if(achievement.elements[2].elements[0].cdata == input.achievementName){
-                console.log(input.steamID);
-                console.log("Acheivement found");
+                //console.log(input.steamID);
+                //console.log("Acheivement found");
                 out.complete = achievement.attributes.closed;
                 out.iconComplete = achievement.elements[0].elements[0].cdata;
                 out.iconIncomplete = achievement.elements[1].elements[0].cdata;
