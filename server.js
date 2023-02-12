@@ -48,17 +48,18 @@ async function extractAchievementInfo(input){
             complete: 0,
             iconComplete: "",
             iconIncomplete: "",
-            name: "",
+            name: input.achievementName,
             description : "",
             gameIcon: "",
             gameName: "",
-            username: "",
-            avatar: "",
-            steamID: "",
-            gameID: ""
+            username: input.username,
+            avatar: input.avatar,
+            steamID: input.steamID,
+            gameID: input.gameID
         }
     
     if(response.status === 200){
+        try{
         const xml = response.data;
         let steamProfile = convert.xml2js(xml);
         let achievements = steamProfile.elements[0].elements[5].elements;
@@ -67,20 +68,20 @@ async function extractAchievementInfo(input){
             //console.log(achievement.elements[2].elements[0].cdata);
             //console.log(achievement.elements[2].elements[0].cdata == input.achievementName);
             if(achievement.elements[2].elements[0].cdata == input.achievementName){
-                //console.log("Acheivement found");
+                console.log(input.steamID);
+                console.log("Acheivement found");
                 out.complete = achievement.attributes.closed;
                 out.iconComplete = achievement.elements[0].elements[0].cdata;
                 out.iconIncomplete = achievement.elements[1].elements[0].cdata;
-                out.name = input.achievementName;
                 out.description = achievement.elements[4].elements[0].cdata;
                 out.gameIcon = steamProfile.elements[0].elements[2].elements[4].elements[0].cdata;
                 out.gameName = steamProfile.elements[0].elements[2].elements[1].elements[0].cdata;
-                out.username = input.username;
-                out.avatar = input.avatar;
-                out.steamID = input.steamID;
-                out.gameID = input.gameID;
             }
         });
+        } catch(error) {
+            console.log(`Failed to find achievement for user ${input.username}`);
+            console.error(error);
+        }
         if(out.complete == 0)
             out.complete = false;
         if(out.complete == 1)
