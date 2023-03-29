@@ -16,9 +16,7 @@ let server = http.createServer(function (req, res) {
 
         Promise.all(promiseTable)
             .then((entries) => {
-                entries = entries.filter(function(item) {
-                   return item.gameIcon !== "";
-                });
+                entries = entries.filter(item => item.gameIcon !== "");
                 let out = nunjucks.render('templates/main.njk', {gamers: entries});
                 res.write(out);
                 res.end();
