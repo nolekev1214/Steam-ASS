@@ -4,4 +4,4 @@ steps:
   args: ['install']
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['app', 'deploy']
+  args: ['app', 'deploy', '--no-cache']
