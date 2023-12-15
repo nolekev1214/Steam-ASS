@@ -35,9 +35,13 @@ let server = http.createServer(function (req, res) {
     }
 });
 
-//server.listen(process.env.PORT); //Run on Google Cloud
-server.listen(8080); //Run Locally
-//console.log('Node.js web server at port 8080 is running..');
+let port = 0;
+if (process.env.PORT) {
+    port = process.env.PORT;
+} else {
+    port = 8080;
+}
+server.listen(port);
 
 async function extractAchievementInfo(input) {
     let response = await axios.get(`https://steamcommunity.com/profiles/${input.steamID}/stats/${input.gameID}/?xml=1`);
