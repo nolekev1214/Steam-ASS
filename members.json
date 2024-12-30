@@ -1,37 +1,58 @@
 [
-    {
-        "steamID": "76561198070849019",
-        "username": "Hunter",
-        "gameID": "578650",
-        "achievementName": "Sunburn",
-        "avatar": "https://avatars.cloudflare.steamstatic.com/5c5b5571febd3621dac27b13e226de75bcfcd828_medium.jpg"
-    },
-    {
-        "steamID": "76561198051434958",
-        "username": "Chase",
-        "gameID": "305620",
-        "achievementName": "Timberwolf Mountain",
-        "avatar": "https://avatars.cloudflare.steamstatic.com/ba03d75999fdb287faeda62f8e98d564f611e971_medium.jpg"
-    },
-    {
-        "steamID": "76561198247563302",
-        "username": "Landon",
-        "gameID": "1184370",
-        "achievementName": "Queen's Gratitude",
-        "avatar": "https://avatars.cloudflare.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
-    },
-    {
-        "steamID": "76561198008480788",
-        "username": "Steven",
-        "gameID": "435150",
-        "achievementName": "Chosen",
-        "avatar": "https://avatars.cloudflare.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
-    },
-    {
-        "steamID": "76561198045936277",
-        "username": "Kevin",
-        "gameID": "525480",
-        "achievementName": "Reminiscing",
-        "avatar": "https://avatars.cloudflare.steamstatic.com/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg"
-    }
+  {
+    "steamID": "76561198070849019",
+    "username": "Hunter",
+    "gameID": "578650",
+    "achievementName": "Sunburn",
+    "avatar": "https://avatars.cloudflare.steamstatic.com/5c5b5571febd3621dac27b13e226de75bcfcd828_medium.jpg"
+  },
+  {
+    "steamID": "76561198051434958",
+    "username": "Chase",
+    "gameID": "305620",
+    "achievementName": "Timberwolf Mountain",
+    "avatar": "https://avatars.cloudflare.steamstatic.com/ba03d75999fdb287faeda62f8e98d564f611e971_medium.jpg"
+  },
+  {
+    "steamID": "76561198247563302",
+    "username": "Landon",
+    "gameID": "1184370",
+    "achievementName": "Queen's Gratitude",
+    "avatar": "https://avatars.cloudflare.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+  },
+  {
+    "steamID": "76561198008480788",
+    "username": "Steven",
+    "gameID": "435150",
+    "achievementName": "Chosen",
+    "avatar": "https://avatars.cloudflare.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
+  },
+  {
+    "steamID": "76561198045936277",
+    "username": "Kevin",
+    "gameID": "525480",
+    "achievementName": "Reminiscing",
+    "avatar": "https://avatars.cloudflare.steamstatic.com/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg"
+  },
+  {
+    "steamID": "76561198065492697",
+    "username": "Cole",
+    "gameID": "1562700",
+    "achievementName": "Taking the lead",
+    "avatar": "https://avatars.fastly.steamstatic.com/70f90fd9744558b550fcde510b4fdb2485697ee7_medium.jpg"
+  },
+  {
+    "steamID": "76561198278206135",
+    "username": "Cameron",
+    "gameID": "528230",
+    "achievementName": "Last Man Standing",
+    "avatar": "https://avatars.fastly.steamstatic.com/be820b4c4732e806db91a0e913c03b45deeccb28_medium.jpg"
+  },
+  {
+    "steamID": "76561198067968419",
+    "username": "Cassie",
+    "gameID": "646570",
+    "achievementName": "Amethyst",
+    "avatar": "https://avatars.fastly.steamstatic.com/9a95e6f5ebd6c280f82b3e7ce215f286746ad3e7_medium.jpg"
+  }
 ]
