@@ -82,5 +82,26 @@
     "gameID": "2455640",
     "achievementName": "A Leader of the People",
     "avatar": "https://avatars.fastly.steamstatic.com/c8ae3cae045e634fc93586d26de4712e31d0b5fe_medium.jpg"
+  },
+  {
+    "steamID": "76561197995437185",
+    "username": "Louis",
+    "gameID": "371970",
+    "achievementName": "Filthy Rich",
+    "avatar": "https://avatars.fastly.steamstatic.com/af1cf9cf15be50bc6eda5a5c35bb1698bbf77ecd_medium.jpg"
+  },
+  {
+    "steamID": "76561199598494792",
+    "username": "Jordan",
+    "gameID": "1446780",
+    "achievementName": "Windbreaker Scarf",
+    "avatar": "https://avatars.fastly.steamstatic.com/3cef849d49a02108a083680c295571bdc2da6181_medium.jpg"
+  },
+  {
+    "steamID": "76561198025187867",
+    "username": "George",
+    "gameID": "594570",
+    "achievementName": "Skilled Geomancer",
+    "avatar": "https://avatars.fastly.steamstatic.com/a676a4f8afa8d75bd1d02a3d30ebe81d4e1b8de2_medium.jpg"
   }
 ]
