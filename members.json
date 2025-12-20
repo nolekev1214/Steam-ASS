@@ -1,107 +1,51 @@
 [
   {
-    "steamID": "76561198070849019",
-    "username": "Hunter",
-    "gameID": "578650",
-    "achievementName": "Sunburn",
-    "avatar": "https://avatars.cloudflare.steamstatic.com/5c5b5571febd3621dac27b13e226de75bcfcd828_medium.jpg"
-  },
-  {
-    "steamID": "76561198051434958",
-    "username": "Chase",
-    "gameID": "305620",
-    "achievementName": "Timberwolf Mountain",
-    "avatar": "https://avatars.cloudflare.steamstatic.com/ba03d75999fdb287faeda62f8e98d564f611e971_medium.jpg"
-  },
-  {
-    "steamID": "76561198247563302",
-    "username": "Landon",
-    "gameID": "1184370",
-    "achievementName": "Queen's Gratitude",
-    "avatar": "https://avatars.cloudflare.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
-  },
-  {
-    "steamID": "76561198008480788",
-    "username": "Steven",
-    "gameID": "435150",
-    "achievementName": "Chosen",
-    "avatar": "https://avatars.cloudflare.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg"
-  },
-  {
     "steamID": "76561198045936277",
     "username": "Kevin",
-    "gameID": "525480",
-    "achievementName": "Reminiscing",
-    "avatar": "https://avatars.cloudflare.steamstatic.com/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg"
-  },
-  {
-    "steamID": "76561198065492697",
-    "username": "Cole",
-    "gameID": "1562700",
-    "achievementName": "Taking the lead",
-    "avatar": "https://avatars.fastly.steamstatic.com/70f90fd9744558b550fcde510b4fdb2485697ee7_medium.jpg"
+    "gameID": "3405340",
+    "achievementName": "Chaos Tome",
+    "avatar": "https://avatars.fastly.steamstatic.com/04e34a428ad7f5f3168c60174c8cecec5f11f809_medium.jpg"
   },
   {
     "steamID": "76561198278206135",
     "username": "Cameron",
-    "gameID": "528230",
-    "achievementName": "Last Man Standing",
+    "gameID": "333640",
+    "achievementName": "Dark Tidings",
     "avatar": "https://avatars.fastly.steamstatic.com/be820b4c4732e806db91a0e913c03b45deeccb28_medium.jpg"
-  },
-  {
-    "steamID": "76561198067968419",
-    "username": "Cassie",
-    "gameID": "646570",
-    "achievementName": "Amethyst",
-    "avatar": "https://avatars.fastly.steamstatic.com/9a95e6f5ebd6c280f82b3e7ce215f286746ad3e7_medium.jpg"
-  },
-  {
-    "steamID": "76561198065514221",
-    "username": "Chris",
-    "gameID": "418530",
-    "achievementName": "Seen a Lot",
-    "avatar": "https://avatars.fastly.steamstatic.com/2181d9c917ed7a86c1e3f969cc1f2aad188e5828_medium.jpg"
-  },
-  {
-    "steamID": "76561198053014852",
-    "username": "Mike",
-    "gameID": "1262350",
-    "achievementName": "VERSPRECHEN",
-    "avatar": "https://avatars.fastly.steamstatic.com/eee362f4ff3b8b6d379687583519b5b99c7fdb06_medium.jpg"
-  },
-  {
-    "steamID": "76561198185258462",
-    "username": "Sean",
-    "gameID": "1145360",
-    "achievementName": "End to Torment",
-    "avatar": "https://avatars.fastly.steamstatic.com/af1cf9cf15be50bc6eda5a5c35bb1698bbf77ecd_medium.jpg"
-  },
-  {
-    "steamID": "76561198090735778",
-    "username": "Curtis",
-    "gameID": "2455640",
-    "achievementName": "A Leader of the People",
-    "avatar": "https://avatars.fastly.steamstatic.com/c8ae3cae045e634fc93586d26de4712e31d0b5fe_medium.jpg"
   },
   {
     "steamID": "76561197995437185",
     "username": "Louis",
-    "gameID": "371970",
-    "achievementName": "Filthy Rich",
+    "gameID": "292030",
+    "achievementName": "Card Collector",
     "avatar": "https://avatars.fastly.steamstatic.com/af1cf9cf15be50bc6eda5a5c35bb1698bbf77ecd_medium.jpg"
   },
   {
-    "steamID": "76561199598494792",
-    "username": "Jordan",
-    "gameID": "1446780",
-    "achievementName": "Windbreaker Scarf",
-    "avatar": "https://avatars.fastly.steamstatic.com/3cef849d49a02108a083680c295571bdc2da6181_medium.jpg"
+    "steamID": "76561198065514221",
+    "username": "Chris",
+    "gameID": "985890",
+    "achievementName": "Ultimate Warrior",
+    "avatar": "https://avatars.fastly.steamstatic.com/2181d9c917ed7a86c1e3f969cc1f2aad188e5828_medium.jpg"
   },
   {
-    "steamID": "76561198025187867",
-    "username": "George",
-    "gameID": "594570",
-    "achievementName": "Skilled Geomancer",
-    "avatar": "https://avatars.fastly.steamstatic.com/a676a4f8afa8d75bd1d02a3d30ebe81d4e1b8de2_medium.jpg"
+    "steamID": "76561198070849019",
+    "username": "Hunter",
+    "gameID": "1533420",
+    "achievementName": "Idiot",
+    "avatar": "https://avatars.fastly.steamstatic.com/5c5b5571febd3621dac27b13e226de75bcfcd828_medium.jpg"
+  },
+  {
+    "steamID": "76561198090735778",
+    "username": "Curtis",
+    "gameID": "1217060",
+    "achievementName": "Powerful Fire",
+    "avatar": "https://avatars.fastly.steamstatic.com/c8ae3cae045e634fc93586d26de4712e31d0b5fe_medium.jpg"
+  },
+  {
+    "steamID": "76561198065492697",
+    "username": "Cole",
+    "gameID": "528230",
+    "achievementName": "The Final Countdown",
+    "avatar": "https://avatars.fastly.steamstatic.com/cfc13c1e2738f2a52bf2592a0be376f8304201c2_medium.jpg"
   }
 ]
